@@ -4,6 +4,13 @@
 .main {
     background-color: brown;
 }
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.main-container {
+    order: -1;
+}
 .filter {
     background-color: burlywood;
 }
@@ -47,6 +54,16 @@
     .container {
         max-width: 720px;
         padding: 0 24px;
+    }
+    .main-wrapper {
+        flex-direction: row;
+    }
+    .filter {
+        flex-basis: 280px;
+    }
+    .main-container {
+        flex: 1;
+        order: initial;
     }
 }
 /** 1024px --> 1999px */
