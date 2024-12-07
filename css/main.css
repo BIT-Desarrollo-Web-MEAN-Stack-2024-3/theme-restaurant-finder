@@ -5,7 +5,8 @@
 
 html {
     /** Reestablece valor de 1rem a base 10, es decir: 1rem = 10px */
-    font-size: var( --overall-font-size );      
+    font-size: var( --overall-font-size );     
+    box-sizing: border-box; 
 }
 
 body {
@@ -17,6 +18,34 @@ body {
 }
 .main {
     background-color: brown;
+}
+.main-banner {
+    position: relative;
+}
+.banner-image {
+    position: relative;
+}
+.banner-search {
+    height: 30.5rem;
+    /* border: 1px solid yellow; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    box-sizing: border-box;
+}
+
+.banner-image img {
+    height: 30.5rem;
+    max-width: 100%;
+    object-fit: cover;
+    width: 100vw;
 }
 .main-wrapper {
     display: flex;
@@ -78,6 +107,13 @@ body {
     .main-container {
         flex: 1;
         order: initial;
+    }
+    .input-search {
+        width: 38.8rem;
+        height: 3rem;
+        padding: .8rem 1.8rem;
+        border-radius: .7rem;
+        max-width: 100%;
     }
 }
 /** 1024px --> 1999px */
