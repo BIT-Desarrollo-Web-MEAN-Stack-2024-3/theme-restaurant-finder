@@ -1,5 +1,8 @@
 /** Define variables para la hoja de estilos */
 :root {
+    /** Colors */
+    --Bright-Gray: #E5E9EB;  /** Borde del Card */
+
     --overall-font-size: 62.5%;
 }
 
@@ -17,7 +20,7 @@ body {
     background-color: blueviolet;
 }
 .main {
-    background-color: brown;
+   
 }
 .main-banner {
     position: relative;
@@ -77,7 +80,24 @@ body {
     background-color: lightskyblue;
 }
 .main-content {
-    background-color: cadetblue;
+    
+}
+.card {
+    display: flex;
+    border-radius: .4rem;
+    background: white;
+    height: 13.9rem;
+    margin: 1rem;
+    box-sizing: border-box;
+}
+.product-image {
+    max-width: 17.7rem;
+    height: 13.9rem;
+    width: 100%;
+    border-radius: .4rem 0 0 .4rem;
+}
+.card-info {
+    border: 1px solid var(--Bright-Gray);
 }
 
 .footer {
