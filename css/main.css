@@ -54,6 +54,8 @@ body {
     margin: 0 .8rem;
     max-width: 75%;
     width: 100%;
+    border: none;
+    outline: none;
 }
 .banner-image img {
     height: 30.5rem;
@@ -134,7 +136,8 @@ body {
         max-width: 99.2rem;
         padding: 0 3.2rem;
     }
-    .banner-image img {
+    .banner-image img,
+    .banner-search {
         height: 36.8rem;
     }
     .input-search {
