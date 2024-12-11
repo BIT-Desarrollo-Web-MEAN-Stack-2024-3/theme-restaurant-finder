@@ -82,22 +82,32 @@ body {
 .main-content {
     
 }
+.products {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
 .card {
     display: flex;
     border-radius: .4rem;
-    background: white;
     height: 13.9rem;
-    margin: 1rem;
     box-sizing: border-box;
+}
+.card__image {
+    flex: 0 0 17.7rem;
 }
 .product-image {
     max-width: 17.7rem;
-    height: 13.9rem;
+    max-height: 13.9rem;
     width: 100%;
     border-radius: .4rem 0 0 .4rem;
+    object-fit: cover;
+    height: 100%;
 }
-.card-info {
+.card__info {
     border: 1px solid var(--Bright-Gray);
+    border-radius: 0 .4rem .4rem 0;
+    flex: 1 0 auto;
 }
 
 .footer {
